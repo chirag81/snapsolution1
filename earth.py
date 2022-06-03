@@ -32,10 +32,10 @@ def app():
         img1 = img1 / 255.0
         img1 = np.expand_dims(img1, axis=0)
         st.image(img1)
-        plt.imshow(image)
-        plt.axis('off')
+        #plt.imshow(image)
+        #plt.axis('off')
         pred = class_names[np.argmax(model.predict(img1))]
-        plt.imshow(image)
-        plt.axis('off')
+        #plt.imshow(image)
+        #plt.axis('off')
         st.write(pred)
 
