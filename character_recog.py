@@ -19,9 +19,6 @@ def app():
                  12: 'M', 13: 'N', 14: 'O', 15: 'P', 16: 'Q', 17: 'R', 18: 'S', 19: 'T', 20: 'U', 21: 'V', 22: 'W',
                  23: 'X', 24: 'Y', 25: 'Z'}
 
-    #df = pd.DataFrame(count,
-                      index=["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R",
-                             "S", "T", "U", "V", "W", "X", "Y", "Z"])
 
     # fig, ax = plt.subplots(1, 1, figsize=(10, 10))
     # ax.barh(alphabets, count)
