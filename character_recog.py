@@ -18,16 +18,6 @@ def app():
     word_dict = {0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E', 5: 'F', 6: 'G', 7: 'H', 8: 'I', 9: 'J', 10: 'K', 11: 'L',
                  12: 'M', 13: 'N', 14: 'O', 15: 'P', 16: 'Q', 17: 'R', 18: 'S', 19: 'T', 20: 'U', 21: 'V', 22: 'W',
                  23: 'X', 24: 'Y', 25: 'Z'}
-    data = pd.read_csv(r"C:\python help\A_Z Handwritten Data.csv").astype('float32')
-    y = data['0']
-    y_int = np.int0(y)
-    count = np.zeros([26, 1], dtype='int')
-    for i in y_int:
-        count[i] += 1
-
-    alphabets = []
-    for i in word_dict.values():
-        alphabets.append(i)
 
     df = pd.DataFrame(count,
                       index=["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R",
@@ -35,8 +25,7 @@ def app():
 
     # fig, ax = plt.subplots(1, 1, figsize=(10, 10))
     # ax.barh(alphabets, count)
-    st.write('graph for images per Alphabet')
-    st.bar_chart(df)
+
 
     model = load_model('model_hand.h5')
 
