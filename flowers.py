@@ -23,7 +23,7 @@ def app():
                    'Dandelion',
                     'Tulip',
                    'Rose',]
-    model = load_model('flowers.h5')
+    model = load_model('flowers2.h5')
     #shape = ((128, 128, 3))
     #model = tensorflow.keras,hub.KerasLayer(model1,shape)
     #class_f = {'Daisy','Sunflower','tupil','Dandelion','Rose'}
@@ -35,14 +35,14 @@ def app():
         img1 = img1 / 255.0
         img1 = np.expand_dims(img1, axis=0)
         st.image(img1)
-       # plt.imshow(image)
-        #plt.axis('off')
+        plt.imshow(image)
+        plt.axis('off')
         #predictions = model.predict(img1)
         pred = class_names[np.argmax(model.predict(img1))]
         #scores = tf.nn.softmax(predictions[0])
         #figure = plt.figure()
-        #plt.imshow(image)
-        #plt.axis('off')
+        plt.imshow(image)
+        plt.axis('off')
         #result = predict_class(image)
         #st.write(result)
         #st.pyplot(figure)
