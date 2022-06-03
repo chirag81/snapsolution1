@@ -1,33 +1,21 @@
 
-from sklearn.model_selection import train_test_split
-from sklearn.model_selection import KFold
-from sklearn.metrics import accuracy_score,precision_score,recall_score,confusion_matrix,roc_curve,roc_auc_score
-from sklearn.model_selection import GridSearchCV
-from sklearn.preprocessing import LabelEncoder
-from keras.preprocessing.image import ImageDataGenerator
-
-# dl libraraies
-from keras import backend as K
-from keras.models import Sequential
-from keras.layers import Dense
-from tensorflow.keras.optimizers import Adam, SGD, Adagrad, Adadelta, RMSprop
-from tensorflow.keras.utils import to_categorical
-
-# specifically for cnn
-from keras.layers import Dropout, Flatten, Activation
-from keras.layers import Conv2D, MaxPooling2D, BatchNormalization
-
-import tensorflow as tf
-import random as rn
+import os
 
 # specifically for manipulating zipped images and getting numpy arrays of pixel values of images.
 import cv2
 import numpy as np
+from keras.layers import Conv2D, MaxPooling2D
+from keras.layers import Dense
+# specifically for cnn
+from keras.layers import Flatten, Activation
+# dl libraraies
+from keras.models import Sequential
+from keras.preprocessing.image import ImageDataGenerator
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.utils import to_categorical
 from tqdm import tqdm
-import os
-from random import shuffle
-from zipfile import ZipFile
-from PIL import Image
 
 X=[]
 Z=[]

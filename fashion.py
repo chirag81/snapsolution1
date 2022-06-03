@@ -1,14 +1,6 @@
-from tensorflow.keras.models import load_model
-import numpy as np
-import cv2
-import tensorflow as tf
-from tensorflow.keras.applications.resnet50 import preprocess_input, decode_predictions
-from tensorflow.keras.preprocessing import image
-import matplotlib.pyplot as plt
 import cv2
 import numpy as np
 import streamlit as st
-from PIL import Image
 from tensorflow.keras.models import load_model
 def app():
     st.title('Prediction of clothes')

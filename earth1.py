@@ -1,9 +1,9 @@
 from tensorflow.keras.callbacks import ReduceLROnPlateau, EarlyStopping
-from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.layers import Dense, Flatten, Conv2D, MaxPool2D, Dropout
 from tensorflow.keras.models import Sequential
-from sklearn.model_selection import train_test_split
-from tensorflow.keras.layers import Dense,Flatten,Conv2D,MaxPool2D,Dropout
+from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
 rescaled = ImageDataGenerator(1/255)
 train_x = rescaled.flow_from_directory(r"C:\python help\world\seg_train\seg_train",target_size=(128,128),batch_size=32,class_mode='categorical')
 test_x = rescaled.flow_from_directory(r"C:\python help\world\seg_test\seg_test",target_size=(128,128),batch_size=32,class_mode='categorical')

@@ -1,13 +1,11 @@
-import keras
-import tensorflow
 from keras.datasets import mnist
+from keras.layers import Conv2D, MaxPooling2D
+from keras.layers import Dense, Dropout, Flatten
 from tensorflow.keras.losses import categorical_crossentropy
+from tensorflow.keras.models import Sequential
 from tensorflow.keras.optimizers import Adadelta
 from tensorflow.keras.utils import to_categorical
-from tensorflow.keras.models import Sequential
-from keras.layers import Dense, Dropout, Flatten
-from keras.layers import Conv2D, MaxPooling2D
-from keras import backend as K
+
 # the data, split between train and test sets
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 print(x_train.shape, y_train.shape)

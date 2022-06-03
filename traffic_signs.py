@@ -1,14 +1,10 @@
 
-import streamlit as st
-from tensorflow.keras import models
-from tensorflow.keras.models import load_model
-import numpy as np
-from PIL import Image
 import cv2
-from tensorflow.keras.applications.resnet50 import preprocess_input, decode_predictions
-from tensorflow.keras.preprocessing import image
+import numpy as np
+import streamlit as st
+from tensorflow.keras.applications.resnet50 import preprocess_input
+from tensorflow.keras.models import load_model
 
-import matplotlib.pyplot as plt
 
 def app():
     st.title('Prediction of traffic signs')

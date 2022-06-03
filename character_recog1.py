@@ -1,13 +1,11 @@
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import train_test_split
-from tensorflow.keras.utils import to_categorical
-from keras.models import Sequential
-from keras.layers import Dense, Flatten, Conv2D, MaxPool2D
-from  tensorflow.keras.optimizers import Adam
 from keras.callbacks import ReduceLROnPlateau, EarlyStopping
-import matplotlib.pyplot as plt
-
+from keras.layers import Dense, Flatten, Conv2D, MaxPool2D
+from keras.models import Sequential
+from sklearn.model_selection import train_test_split
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.utils import to_categorical
 
 data = pd.read_csv(r"C:\python help\A_Z Handwritten Data.csv").astype('float32')
 X = data.drop('0',axis = 1)

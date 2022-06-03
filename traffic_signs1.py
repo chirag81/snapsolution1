@@ -1,16 +1,13 @@
 #traffic main code
 import os
+
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 from PIL import Image
-import cv2
-import tensorflow as tf
-from tensorflow.keras.utils import to_categorical
 from keras.layers import Conv2D, Dense, Flatten, MaxPool2D, Dropout
-from tensorflow.keras.models import Sequential
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.utils import to_categorical
 
 imgs_path = r"C:\python help\traffic\Train"
 data = []

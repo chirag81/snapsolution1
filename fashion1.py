@@ -1,11 +1,12 @@
 #fashion code main
-from tensorflow.keras.optimizers import SGD, Adam
 import numpy as np
 import pandas as pd
-from tensorflow.keras.callbacks import ReduceLROnPlateau, EarlyStopping
-from tensorflow.keras.models import Sequential
 from sklearn.model_selection import train_test_split
-from tensorflow.keras.layers import Dense,Flatten,Conv2D,MaxPool2D,Dropout
+from tensorflow.keras.callbacks import ReduceLROnPlateau, EarlyStopping
+from tensorflow.keras.layers import Dense, Flatten, Conv2D, MaxPool2D
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.optimizers import Adam
+
 train = pd.read_csv(r"C:\python help\fashion-mnist\fashion-mnist_train.csv")
 test = pd.read_csv(r"C:\python help\fashion-mnist\fashion-mnist_test.csv")
 
