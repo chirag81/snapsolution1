@@ -1,19 +1,7 @@
 import pandas as pd
-import streamlit as st
-from tensorflow.keras.models import load_model
-import numpy as np
-from PIL import Image
-import cv2
-from tensorflow.keras.applications.resnet50 import preprocess_input, decode_predictions
-from tensorflow.keras.preprocessing import image
-#from character_recog1 import y
-import matplotlib.pyplot as plt
-
-
 import cv2
 import numpy as np
 import streamlit as st
-from PIL import Image
 from tensorflow.keras.models import load_model
 def app():
     st.title('Predection of alphabet characters')
