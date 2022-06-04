@@ -7,14 +7,9 @@ def app():
     st.title('Predection of alphabet characters')
     st.write("you can do clasification alphabet characters here")
     image_file = st.file_uploader("Upload Images", type=["png", "jpg", "jpeg"])
+    st.write("link for GUI code [link](https://github.com/chirag81/snapsolution1/blob/main/character_recog.py)")
     st.write(
-        "link for GUI code  [link](https://github.com/chirag81/"
-        "Snapsolution/commit/b226eac802dff1f5338ea00a8b934b279481ecab#diff"
-        "-7b462f6fb8d5636379e3c628809b6c00f3e87a81c8e73eb4a7560df7b57fd053)")
-    st.write(
-        "link for main code [link](https://github.com/chirag81"
-        "/Snapsolution/commit/b226eac802dff1f5338ea00a8b934b279481ecab#diff"
-        "-dc980fc6165906d1263fbb670fb1ac5d4dd8217d566c7ac8956cb2999ef596fc)")
+        "link for main code [link](https://github.com/chirag81/snapsolution1/blob/main/character_recog1.py)")
     word_dict = {0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E', 5: 'F', 6: 'G', 7: 'H', 8: 'I', 9: 'J', 10: 'K', 11: 'L',
                  12: 'M', 13: 'N', 14: 'O', 15: 'P', 16: 'Q', 17: 'R', 18: 'S', 19: 'T', 20: 'U', 21: 'V', 22: 'W',
                  23: 'X', 24: 'Y', 25: 'Z'}
