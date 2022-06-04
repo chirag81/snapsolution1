@@ -37,10 +37,8 @@ def app():
         pred = class_names[np.argmax(model.predict(img1))]
         #scores = tf.nn.softmax(predictions[0])
         #figure = plt.figure()
-        plt.imshow(image)
-        plt.axis('off')
         #result = predict_class(image)
         #st.write(result)
         #st.pyplot(figure)
-        st.write("here is the result",pred)
+        st.write("the name of the flower shown in image is",pred)
 
