@@ -4,8 +4,7 @@ def app():
     st.title('snap solutions')
 
     st.write('Step by Step Guide for doing imaga classification')
-    image = Image.open("C:\python help\cnn1.png")
-    st.image(image, caption='CNN model')
+    st.image("C:\python help\cnn1.png")
     st.subheader('Step 1: Choose a Dataset')
     st.text('Choose a dataset of your interest or you can also create your own ')
     st.text('image dataset for solving your own image classification problem. ')
