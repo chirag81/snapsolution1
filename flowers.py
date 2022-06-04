@@ -11,13 +11,9 @@ def app():
     st.write("you can do  clasification of flowers here")
     image_file = st.file_uploader("Upload Images", type=["png", "jpg", "jpeg"])
     st.write(
-        "link for GUI code  [link](https://github.com/chirag81"
-        "/Snapsolution/commit/b6f86c75e548596e557c660b160b01fa27e8b163#diff"
-        "-710efcea92c8d7f574e803cfe7b192e2db41e888778ebc0a5d1d4797b43a2209)")
+        "link for GUI code  [link](https://github.com/chirag81/snapsolution1/blob/main/flowers.py)")
     st.write(
-        "link for main code [link](https://github.com/chirag81/Snapsolution/"
-        "commit/b226eac802dff1f5338ea00a8b934b279481ecab#diff-"
-        "4d3367809c6bf308e7ba97c03e326de247cf2098eae165804f8085f95b31861e)")
+        "link for main code [link](https://github.com/chirag81/snapsolution1/blob/main/flowers1.py)")
     class_names = ['Daisy',
                    'Sunflower',
                    'Dandelion',

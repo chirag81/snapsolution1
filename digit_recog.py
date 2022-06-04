@@ -9,13 +9,9 @@ def app():
     st.write("you can do classification of digits here")
     image_file = st.file_uploader("Upload Images", type=["png", "jpg", "jpeg"])
     st.write(
-        "link for GUI code  [link](https://github.com/chirag81/"
-        "Snapsolution/commit/b226eac802dff1f5338ea00a8b934b279481ecab#diff"
-        "-2289f55b0f32769ab0b95885432ed417a96c0853cf06a858b94f9ea4c4a1229b)")
+        "link for GUI code  [link](https://github.com/chirag81/snapsolution1/blob/main/digit._recog.py)")
     st.write(
-        "link for main code [link](https://github.com/chirag81/"
-        "Snapsolution/commit/b226eac802dff1f5338ea00a8b934b279481ecab#diff-"
-        "891499e3eb56263f887dd593699090ec2e0514436f53efc84760a5a2a7f2f28c)")
+        "link for main code [link](https://github.com/chirag81/snapsolution1/blob/main/digit._recog1.py)")
 
     num1 =['0','1','2','3','4','5','6','7','8','9']
     model = load_model('mnist.h5')

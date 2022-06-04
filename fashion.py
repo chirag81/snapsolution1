@@ -7,13 +7,9 @@ def app():
     st.write("you can do clasification of different clothes here")
     image_file = st.file_uploader("Upload Images", type=["png", "jpg", "jpeg"])
     st.write(
-        "link for GUI code  [link](https://github.com/chirag81/"
-        "Snapsolution/commit/b226eac802dff1f5338ea00a8b934b279481ecab#diff"
-        "-7175a4d484f263900aea000dfd3a83d5d1dbe65716759d58f17d62263438ac8a)")
+        "link for GUI code  [link](https://github.com/chirag81/snapsolution1/blob/main/fashion.py)")
     st.write(
-        "link for main code [link](https://github.com/chirag81/"
-        "Snapsolution/commit/b226eac802dff1f5338ea00a8b934b279481ecab#diff-"
-        "9d2fccb1537d093107c5da380a469141c23788780c12128afe715dc0675e1d2d)")
+        "link for main code [link](https://github.com/chirag81/snapsolution1/blob/main/fashion1.py)")
 
     class_n = {0: 'T_shirt/top',
                1: 'Trouser',

@@ -12,13 +12,9 @@ def app():
 
     image_file = st.file_uploader("Upload image", type=['jpeg', 'png', 'jpg', 'webp'])
     st.write(
-        "link for GUI code  [link](https://github.com/chirag81/"
-        "Snapsolution/commit/b226eac802dff1f5338ea00a8b934b279481ecab#diff-"
-        "1ee94c10b585501517914e97b64524ac32e21540e6353c244c180db9d2ccad4a)")
+        "link for GUI code  [link](https://github.com/chirag81/snapsolution1/blob/main/traffic_signs.py)")
     st.write(
-        "link for main code [link](https://github.com/chirag81/"
-        "Snapsolution/commit/b226eac802dff1f5338ea00a8b934b279481ecab#diff"
-        "-d1ff23710f9b5364efb24e8e493354b2a3096148edf7ce808b7d9537ebe03f38)")
+        "link for main code [link](https://github.com/chirag81/snapsolution1/blob/main/traffic_signs1.py)")
    # img1 = st.file_uploader("Please upload an brain scan file", type=["jpg","png"])
     # load the trained model to classify traffic signs
 
