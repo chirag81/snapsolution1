@@ -40,5 +40,5 @@ def app():
         #result = predict_class(image)
         #st.write(result)
         #st.pyplot(figure)
-        st.write("the name of the flower shown in image is",pred)
+        st.write("the name of the flower shown in image is:-",pred)
 

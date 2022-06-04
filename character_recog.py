@@ -8,8 +8,6 @@ def app():
     st.title('Predection of alphabet characters')
     st.write("you can do clasification alphabet characters here")
     image_file = st.file_uploader("Upload Images", type=["png", "jpg", "jpeg"])
-    plt.imshow(image_file)
-    plt.axis('off')
     st.write("link for GUI code [link](https://github.com/chirag81/snapsolution1/blob/main/character_recog.py)")
     st.write("link for main code [link](https://github.com/chirag81/snapsolution1/blob/main/character_recog1.py)")
     word_dict = {0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E', 5: 'F', 6: 'G', 7: 'H', 8: 'I', 9: 'J', 10: 'K', 11: 'L',
@@ -40,6 +38,6 @@ def app():
 
         img_pred = word_dict[np.argmax(model.predict(img_final))]
 
-        st.write(img_pred)
+        st.write('The alphabet shown in the image is:-'img_pred)
 
 
