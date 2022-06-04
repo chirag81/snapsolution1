@@ -42,5 +42,5 @@ def app():
         #result = predict_class(image)
         #st.write(result)
         #st.pyplot(figure)
-        st.write(pred)
+        st.write("here is the result",pred)
 
