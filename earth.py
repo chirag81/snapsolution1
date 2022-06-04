@@ -33,5 +33,5 @@ def app():
         pred = class_names[np.argmax(model.predict(img1))]
         #plt.imshow(image)
         #plt.axis('off')
-        st.write(pred)
+        st.write('The place shown in the image is:-',pred)
 

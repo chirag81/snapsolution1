@@ -82,7 +82,7 @@ def app():
         pred = classe1[np.argmax(model.predict(img))]
     # pred = classes1[model.predict(img4)]
     # pred = model.predict_classes([image])[0]
-        st.write(pred)
+        st.write('The trafic_sighn shown in the image is:-',pred)
 
 
 

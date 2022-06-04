@@ -44,7 +44,7 @@ def app():
         pred = class_n[np.argmax(model.predict(img_final))]
         # pred = classes1[model.predict(img4)]
         # pred = model.predict_classes([image])[0]
-        st.write(pred)
+        st.write('The cloth shown in the image is:-',pred)
 
 
 

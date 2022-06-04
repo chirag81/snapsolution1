@@ -32,6 +32,6 @@ def app():
 
         img_pred = num1[np.argmax(model.predict(img_final))]
 
-        st.write(img_pred)
+        st.write('The digit shown in the image is:-',img_pred)
 
 
