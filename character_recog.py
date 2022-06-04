@@ -38,6 +38,6 @@ def app():
 
         img_pred = word_dict[np.argmax(model.predict(img_final))]
 
-        st.write('The alphabet shown in the image is:-'img_pred)
+        st.write('The alphabet shown in the image is:-',img_pred)
 
 
